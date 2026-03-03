@@ -1,0 +1,99 @@
+.App {
+  text-align: center;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* general colors themed around mountain greens */
+:root {
+  --primary-green: #2e7d32;
+  --light-green: #81c784;
+  --dark-green: #1b5e20;
+  --accent: #a5d6a7;
+  --background: #f1f8e9;
+  --text-color: #2c3e50;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text-color);
+}
+
+.navbar {
+  background: var(--primary-green);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.home-section {
+  padding: 3rem 2rem;
+  background: var(--light-green);
+}
+
+.booking-form {
+  background: white;
+  padding: 1.5rem;
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+}
+
+.booking-form h2 {
+  margin-top: 0;
+  color: var(--dark-green);
+}
+
+.booking-form label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.booking-form input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.booking-form button {
+  background: var(--primary-green);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.booking-form button:hover {
+  background: var(--dark-green);
+}
+
+.combined-booking {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* remove CRA default styles no longer needed */
+.App-logo, .App-header, .App-link, @keyframes App-logo-spin {}
+
